@@ -12,7 +12,7 @@ document
 		if (!emailValue.includes('@') || emailValue.trim() === '') {
 			errorMessage.style.display = 'block';
 			errorIcon.style.display = 'inline';
-			emailInput.style.borderColor = 'red';
+			// emailInput.style.borderColor = '$soft-red';
 		} else {
 			errorMessage.style.display = 'none';
 			errorIcon.style.display = 'none';
