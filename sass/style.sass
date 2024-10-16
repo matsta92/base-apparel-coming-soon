@@ -1,0 +1,158 @@
+@import variables
+
+*
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+
+html
+    font-size: 10px 
+    font-family: "Josefin Sans", sans-serif
+
+body
+    position: relative
+    font-size: 1.6rem
+    background: $gradient1
+    color: $desaturated-red
+    height: 100vh
+
+.component__logo
+    width: 170px
+    padding: 30px
+
+
+.component__hero-mobile
+    display: block
+    width: 100%
+
+.component__hero-desktop
+    display: none
+    width: 100%
+
+.component__main
+    margin: 0 auto
+    max-width: 576px
+    padding: 30px
+
+.component__title
+    margin-top: 30px
+    text-transform: uppercase
+    letter-spacing: 10px
+    text-align: center
+    font-size: 4rem
+    font-weight: 600
+    color: black
+    span
+        font-weight: 300
+        color: $desaturated-red
+    
+.component__text
+    margin-top: 20px
+    text-align: center
+    font-size: 1.4rem
+    line-height: 2rem 
+
+.component__email
+    position: relative
+    margin: 0 auto
+    display: flex
+    margin-top: 30px
+    justify-content: center
+    align-items: center
+    width: 100%
+    max-width: 450px
+
+.component__input-email
+    height: 50px
+    padding: 20px
+    background-color: transparent
+    width: 100%
+    border-radius: 25px
+    border: 1px solid $desaturated-red
+    transition: .3s border
+
+
+.component__input-email::placeholder
+    color: $desaturated-red
+
+.component__input-email:focus
+    outline: none
+    border: 1px solid $soft-red
+
+.component__error-icon
+    position: absolute
+    left: 70%
+
+.component__error-message
+    position: absolute
+    top: 70px
+    left: 20px
+
+.component__email-btn
+    position: absolute
+    left: 80%
+    height: 50px
+    width: 21%
+    border-radius: 25px
+    border: none
+    background: $gradient2
+    cursor: pointer
+
+.component__email-btn:hover
+    background: $gradient3
+    
+.attribution
+    position: absolute
+    bottom: 10px
+    font-size: 1.2rem
+    width: 100%
+    text-align: center
+    a
+        text-decoration: none
+        color: $dark-grayish-red
+        font-weight: 700
+        transition: .3s color
+    a:hover 
+        color: $soft-red
+
+@media (min-width: 992px)
+    .component
+        max-width: 1980px
+        margin: 0 auto
+        display: grid
+        grid-template-columns: 0.6fr 0.4fr
+        grid-template-rows: 0.2fr 0.8fr
+
+    .component__logo
+        margin: 0 100px
+        width: 200px
+        grid-column: 1/2
+        grid-row: 1/2
+
+    .component__hero-mobile
+        display: none
+        width: 100%
+
+    .component__hero-desktop
+        height: 100vh
+        object-fit: cover
+        display: block
+        grid-column: 2/3
+        grid-row: 1/3
+
+    .component__main
+        margin: 0 0 0 100px
+        max-width: 450px
+        grid-column: 1/2
+        grid-row: 2/3
+
+    .component__title
+        font-size: 6rem
+        text-align: left
+
+    .component__text
+        text-align: left
+
+    .component__email
+        margin: 40px 0

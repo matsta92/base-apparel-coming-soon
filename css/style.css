@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  font-size: 1.6rem;
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  color: hsl(0, 36%, 70%);
+  height: 100vh;
+}
+
+.component__logo {
+  width: 170px;
+  padding: 30px;
+}
+
+.component__hero-mobile {
+  display: block;
+  width: 100%;
+}
+
+.component__hero-desktop {
+  display: none;
+  width: 100%;
+}
+
+.component__main {
+  margin: 0 auto;
+  max-width: 576px;
+  padding: 30px;
+}
+
+.component__title {
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+  color: black;
+}
+.component__title span {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+
+.component__text {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.component__email {
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 450px;
+}
+
+.component__input-email {
+  height: 50px;
+  padding: 20px;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 25px;
+  border: 1px solid hsl(0, 36%, 70%);
+  -webkit-transition: 0.3s border;
+  transition: 0.3s border;
+}
+
+.component__input-email::-webkit-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.component__input-email::-moz-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.component__input-email:-ms-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.component__input-email::-ms-input-placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.component__input-email::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.component__input-email:focus {
+  outline: none;
+  border: 1px solid hsl(0, 93%, 68%);
+}
+
+.component__error-icon {
+  position: absolute;
+  left: 70%;
+}
+
+.component__error-message {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+}
+
+.component__email-btn {
+  position: absolute;
+  left: 80%;
+  height: 50px;
+  width: 21%;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  cursor: pointer;
+}
+
+.component__email-btn:hover {
+  background: linear-gradient(135deg, hsl(0, 90%, 90%), hsl(0, 90%, 90%));
+}
+
+.attribution {
+  position: absolute;
+  bottom: 10px;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(0, 6%, 24%);
+  font-weight: 700;
+  -webkit-transition: 0.3s color;
+  transition: 0.3s color;
+}
+.attribution a:hover {
+  color: hsl(0, 93%, 68%);
+}
+
+@media (min-width: 992px) {
+  .component {
+    max-width: 1980px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.2fr 0.8fr;
+  }
+  .component__logo {
+    margin: 0 100px;
+    width: 200px;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .component__hero-mobile {
+    display: none;
+    width: 100%;
+  }
+  .component__hero-desktop {
+    height: 100vh;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: block;
+    grid-column: 2/3;
+    grid-row: 1/3;
+  }
+  .component__main {
+    margin: 0 0 0 100px;
+    max-width: 450px;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  .component__title {
+    font-size: 6rem;
+    text-align: left;
+  }
+  .component__text {
+    text-align: left;
+  }
+  .component__email {
+    margin: 40px 0;
+  }
+}/*# sourceMappingURL=style.css.map */
